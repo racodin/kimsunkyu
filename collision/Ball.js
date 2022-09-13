@@ -1,12 +1,13 @@
 import Vector from "../common/Vector.js";
 
 export default class Ball {
-  constructor({ x = 0, y = 0, radius = 10, color = "#fff" } = {}) {
+  constructor({ x = 0, y = 0, radius = 10, speed = 3, color = "#fff" } = {}) {
     this.position = new Vector(x, y);
     this.velocity = Vector.random2D();
-    this.velocity.mult(3);
+    this.velocity.mult(speed);
     this.radius = radius;
     this.color = color;
+    this.colorCopy = color;
     this.mass = radius * 0.1;
   }
 
@@ -19,6 +20,8 @@ export default class Ball {
     ctx.beginPath();
     ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
     ctx.fill();
+    ctx.strokeStyle = "white";
+    ctx.stroke();
   }
 
   boundaryCollision({ width = 500, height = 300 }) {

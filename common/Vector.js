@@ -19,11 +19,11 @@ export default class Vector {
 
   /** 복사 */
   copy() {
-    return new Vector(this.x, this.y, this.z);
+    return new Vector(this.x, this.y);
   }
 
   /** 설정 */
-  set(x = 0, y = 0, z = 0) {
+  set(x = 0, y = 0) {
     if (x instanceof Vector) {
       this.x = x.x;
       this.y = x.y;
@@ -45,7 +45,7 @@ export default class Vector {
   }
 
   /** 더하기 */
-  add(x = 0, y = 0, z = 0) {
+  add(x = 0, y = 0) {
     if (x instanceof Vector) {
       this.x += x.x;
       this.y += x.y;
@@ -61,7 +61,7 @@ export default class Vector {
   }
 
   /** 빼기 */
-  sub(x = 0, y = 0, z = 0) {
+  sub(x = 0, y = 0) {
     if (x instanceof Vector) {
       this.x -= x.x;
       this.y -= x.y;
@@ -141,28 +141,19 @@ export default class Vector {
 
   /** 두 벡터의 내적 */
   dot(v) {
-    return this.x * v.x + this.y * v.y + this.z * v.z;
-  }
-
-  /** 두 벡터의 외적 */
-  cross(v) {
-    let x = this.y * v.z - this.z * v.y;
-    let y = this.z * v.x - this.x * v.z;
-    let z = this.x * v.y - this.y * v.x;
-    return new Vector(x, y, z);
+    return this.x * v.x + this.y * v.y;
   }
 
   /** 두 벡터 사이의 각도 */
   angleBetween(v) {
     let dotmagmag = this.dot(v) / (this.mag() * v.mag());
     let angle = Math.acos(Math.min(1, Math.max(-1, dotmagmag)));
-    angle = angle * Math.sign(this.cross(v).z || 1);
     return angle;
   }
 
   /** 생성 */
-  static create(x = 0, y = 0, z = 0) {
-    return new Vector(x, y, z);
+  static create(x = 0, y = 0) {
+    return new Vector(x, y);
   }
 
   /** 임의의 각도에서 벡터 생성  */
@@ -240,10 +231,6 @@ export default class Vector {
 
   static dot(v1 = undefined, v2 = undefined) {
     return v1.dot(v2);
-  }
-
-  static cross(v1 = undefined, v2 = undefined) {
-    return v1.cross(v2);
   }
 
   static angleBetween(v1 = undefined, v2 = undefined) {

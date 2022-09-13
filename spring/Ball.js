@@ -1,20 +1,30 @@
 import Vector from "../common/Vector.js";
 
 export default class Ball {
-  constructor({ x = 0, y = 0, mass = 0, color = "#fff" }) {
+  constructor({
+    x = 0,
+    y = 0,
+    radius = 10,
+    color = "#fff",
+    friction = 0.9,
+  } = {}) {
+    this.acceleration = new Vector(0, 0);
+    this.velocity = new Vector(0, 0);
     this.position = new Vector(x, y);
-    this.velocity = new Vector();
-    this.acceleration = new Vector();
-    this.mass = mass;
+    this.radius = radius;
     this.color = color;
+    this.mass = 1;
+    this.friction = friction;
   }
 
   applyForce(force) {
-    let f = Vector.div(force, this.mass);
+    let f = force.copy();
+    f.div(this.mass);
     this.acceleration.add(f);
   }
 
   update() {
+    this.velocity.mult(this.friction); // 0.99
     this.velocity.add(this.acceleration);
     this.position.add(this.velocity);
     this.acceleration.mult(0);
@@ -23,16 +33,9 @@ export default class Ball {
   render(ctx) {
     ctx.fillStyle = this.color;
     ctx.beginPath();
-    ctx.arc(this.position.x, this.position.y, this.mass * 4, 0, Math.PI * 2);
+    ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
     ctx.fill();
     ctx.strokeStyle = "white";
     ctx.stroke();
-  }
-
-  boundary(width, height) {
-    if (this.position.y > height - this.mass * 4) {
-      this.velocity.y *= -0.6;
-      this.position.y = height - this.mass * 4;
-    }
   }
 }
