@@ -15,7 +15,7 @@ let isAnimate = true;
 
 const config = {
   friction: 0.2,
-  height: 400,
+  height: 300,
 };
 
 function createControl() {

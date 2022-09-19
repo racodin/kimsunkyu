@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@100;200;300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="background">
+    <div id="game">
+
+      <canvas width="500" height="800"></canvas>
+      <div class="top">
+        <p class="red">SCORE</p>
+        <span class="score white">0</span>
+      </div>
+      <div class="center">
+        <button class="play hide">PLAY GAME</button>
+        <p class="guide red hide">
+          LEFT: <span class="white">A or Arrow left</span><br>
+          RIGHT: <span class="white">D or Arrow right</span><br>
+          SPACE: <span class="white">spacebar</span>
+        </p>
+        <p class="ready red hide">READY!</p>
+        <p class="gameover red hide">GAME OVER</p>
+        <button class="restart hide">RESTART</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script type="module" src="./Game.js"></script>
+</body>
+
+</html>

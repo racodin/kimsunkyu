@@ -7,7 +7,6 @@ export default class Ball {
     this.velocity.mult(speed);
     this.radius = radius;
     this.color = color;
-    this.colorCopy = color;
     this.mass = radius * 0.1;
   }
 

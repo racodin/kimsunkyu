@@ -1,0 +1,79 @@
+body, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+}
+
+button {
+  padding: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  color: white;
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+#background {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+#game {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.top {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  line-height: 28px;
+  z-index: 1;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 64px;
+}
+
+.hide {
+  display: none;
+}
+
+.guide {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
