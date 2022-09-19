@@ -1,6 +1,6 @@
 import Stats from "../lib/stats.module.js";
 import * as dat from "../lib/dat.gui.module.js";
-import Canvas from "../common/canvas.js";
+import Canvas from "../common/Canvas.js";
 import Vector from "../common/Vector.js";
 import Ball from "./Ball.js";
 import Water from "./Water.js";
