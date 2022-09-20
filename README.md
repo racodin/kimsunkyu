@@ -1,57 +1,56 @@
-# 개인작업물
 
-### Galaga
+# Galaga
+> 갤러그 게임    
+
 <img src="./assets/galaga.png" />
 
-> 갤러그 게임 구현
+[demo] <https://racodin.github.io/kimsunkyu/galaga/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/galaga>
 
-* [demo] <https://racodin.github.io/kimsunkyu/galaga/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/galaga>
-***
-### Particle
+# Particle
+> 다양한 파티클
+
 <img src="./assets/particle.png" />
 
-> 파티클 구현
+[demo] <https://racodin.github.io/kimsunkyu/particle/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/particle>
 
-* [demo] <https://racodin.github.io/kimsunkyu/particle/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/particle>
-***
-### Wave
+# Wave
+> 벡터를 활용한 파도 물결
+
 <img src="./assets/wave.png" />
 
-> 파도 물결 구현
+[demo] <https://racodin.github.io/kimsunkyu/wave/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/wave>
 
-* [demo] <https://racodin.github.io/kimsunkyu/wave/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/wave>
-***
-### Chain
+# Chain
+> 벡터를 활용한 체인
+
 <img src="./assets/chain.png" />
 
-> 체인 구현
+[demo] <https://racodin.github.io/kimsunkyu/chain/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/chain>
 
-* [demo] <https://racodin.github.io/kimsunkyu/chain/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/chain>
-***
-### Spring
+# Spring
+> 벡터를 활용한 스프링
+
 <img src="./assets/spring.png" />
 
-> 스프링 구현
+[demo] <https://racodin.github.io/kimsunkyu/spring/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/spring>
 
-* [demo] <https://racodin.github.io/kimsunkyu/spring/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/spring>
-***
-### Force
+# Force
+> 벡터를 활용한 힘의 작용
+
 <img src="./assets/force.png" />
 
-> 물리 구현
+[demo] <https://racodin.github.io/kimsunkyu/force/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/force>
 
-* [demo] <https://racodin.github.io/kimsunkyu/force/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/force>
-***
-### Collision
-<img src="./assets/collision.png" />
-
+# Collision
 > 벡터를 활용한 충돌 감지
 
-* [demo] <https://racodin.github.io/kimsunkyu/collision/index.html>  
-* [code] <https://github.com/racodin/kimsunkyu/tree/master/collision>
+<img src="./assets/collision.png" />
+
+[demo] <https://racodin.github.io/kimsunkyu/collision/index.html>  
+[code] <https://github.com/racodin/kimsunkyu/tree/master/collision>
