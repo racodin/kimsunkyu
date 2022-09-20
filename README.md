@@ -1,4 +1,3 @@
-
 # Galaga
 > 갤러그 게임    
 
@@ -6,6 +5,7 @@
 
 [demo] <https://racodin.github.io/kimsunkyu/galaga/index.html>  
 [code] <https://github.com/racodin/kimsunkyu/tree/master/galaga>
+
 
 # Particle
 > 다양한 파티클
@@ -15,6 +15,7 @@
 [demo] <https://racodin.github.io/kimsunkyu/particle/index.html>  
 [code] <https://github.com/racodin/kimsunkyu/tree/master/particle>
 
+
 # Wave
 > 벡터를 활용한 파도 물결
 
@@ -22,6 +23,7 @@
 
 [demo] <https://racodin.github.io/kimsunkyu/wave/index.html>  
 [code] <https://github.com/racodin/kimsunkyu/tree/master/wave>
+
 
 # Chain
 > 벡터를 활용한 체인
@@ -31,6 +33,7 @@
 [demo] <https://racodin.github.io/kimsunkyu/chain/index.html>  
 [code] <https://github.com/racodin/kimsunkyu/tree/master/chain>
 
+
 # Spring
 > 벡터를 활용한 스프링
 
@@ -39,6 +42,7 @@
 [demo] <https://racodin.github.io/kimsunkyu/spring/index.html>  
 [code] <https://github.com/racodin/kimsunkyu/tree/master/spring>
 
+
 # Force
 > 벡터를 활용한 힘의 작용
 
@@ -46,6 +50,7 @@
 
 [demo] <https://racodin.github.io/kimsunkyu/force/index.html>  
 [code] <https://github.com/racodin/kimsunkyu/tree/master/force>
+
 
 # Collision
 > 벡터를 활용한 충돌 감지
